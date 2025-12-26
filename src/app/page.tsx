@@ -71,7 +71,7 @@ export default async function HomePage() {
 
               <div className="mb-6 pt-6 border-t border-slate-100">
                 <span className="text-3xl font-bold text-slate-900">
-                  ${service.price.toFixed(2)}
+                  {service.price.toLocaleString()} MMK
                 </span>
               </div>
 

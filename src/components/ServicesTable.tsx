@@ -82,7 +82,7 @@ export default function ServicesTable({ services, onUpdate }: ServicesTableProps
                                         <span className="text-slate-500 text-sm line-clamp-2">{service.description}</span>
                                     </td>
                                     <td className="py-4 px-6">
-                                        <span className="text-slate-900 font-bold">${service.price.toFixed(2)}</span>
+                                        <span className="text-slate-900 font-bold">{service.price.toLocaleString()} MMK</span>
                                     </td>
                                     <td className="py-4 px-4">
                                         {service.active ? (

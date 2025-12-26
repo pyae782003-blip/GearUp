@@ -202,7 +202,7 @@ function OrderForm() {
                                             <div className="text-4xl mb-2">{service.icon}</div>
                                             <h3 className="text-slate-900 font-semibold">{service.name}</h3>
                                             <p className="text-slate-500 text-sm mt-1">{service.description}</p>
-                                            <p className="text-slate-900 font-bold text-lg mt-3">${service.price.toFixed(2)}</p>
+                                            <p className="text-slate-900 font-bold text-lg mt-3">{service.price.toLocaleString()} MMK</p>
                                         </label>
                                     ))}
                                 </div>

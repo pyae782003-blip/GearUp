@@ -129,7 +129,7 @@ export default function ServiceForm({ service, onClose }: ServiceFormProps) {
                         </div>
 
                         <div>
-                            <label className="block text-slate-700 mb-2 font-medium">Price (USD)</label>
+                            <label className="block text-slate-700 mb-2 font-medium">Price (MMK)</label>
                             <input
                                 type="number"
                                 step="0.01"

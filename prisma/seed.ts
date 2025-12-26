@@ -44,9 +44,11 @@ async function main() {
     const existingCount = await prisma.service.count()
 
     if (existingCount === 0) {
-        await prisma.service.createMany({
-            data: services
-        })
+        for (const service of services) {
+            await prisma.service.create({
+                data: service
+            })
+        }
         console.log('Services seeded successfully!')
     } else {
         console.log('Services already exist, skipping seed')
